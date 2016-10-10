@@ -1,0 +1,236 @@
+====================
+     10-10-2016
+====================
+
+   * build/
+37bcbe0  make InitiateWings Acceptable make command  [Adarsh-Mr]
+e756259  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//build into n7-exp  [Adarsh-Mr]
+5295b2f  build: use the system's ccache by default  [Adarsh-Mr]
+0bc90fc  support macOS sdk 10.12  [Adarsh-Mr]
+8047286  Revert "main: Use date -d on OSX"  [Adarsh-Mr]
+425e5d6  build-with-colors: moar colors  [Adarsh-Mr]
+e697064  build: look for device configurations from BirdSanctuary Cause that's where we keep our birds  [Adarsh-Mr]
+efbfdc3  kernel: default to gcc 4.9; auto-set prefix based on TARGET_ARCH  [Adarsh-Mr]
+4aa444b  Slim: fix up roomservice  [Adarsh-Mr]
+dbcedd3  py3: update all the things - missing part  [Adarsh-Mr]
+44a37d0  build: repopick: Support squashed commits for Change-Id detection  [Adarsh-Mr]
+51a41f5  build: repopick: Support    *s with less than 10 commits  [Adarsh-Mr]
+35ab345  repopick: handle revisions with slashes  [Adarsh-Mr]
+7a10815  repopick: don't re-pick duplicate changes  [Adarsh-Mr]
+32349bb  repopick: try to use remote's default revision  [Adarsh-Mr]
+3bdc4ba  qcom: Fix media pathmap for AOSP variant  [Adarsh-Mr]
+6fdd2fc  libart:  Allow adjustment of the base address  [Adarsh-Mr]
+41979af  build: Don't create /system/vendor symlink in recovery ramdisk  [Adarsh-Mr]
+5198919  build: don't dex preopt by default on linux  [Adarsh-Mr]
+7ca0dc8  Kill MOAR Bloats  [Adarsh-Mr]
+3fc9d34  OMS-N: adb shell command to access OverlayManagerService  [Adarsh-Mr]
+e943c93  Revert "build: Make sure we're building our secondary resource package as denendency."  [Adarsh-Mr]
+4b04348  Revert "Add flag to disable slim framework"  [Adarsh-Mr]
+83329cb  Add A Function to cd to Device tree  [Adarsh-Mr]
+716891d  cardinal  [Adarsh-Mr]
+fe6d736  Remove MOAR Bloat  [Adarsh-Mr]
+31da536  Remove Default Combos  [Adarsh-Mr]
+001caa4  Remove generic builds. We never build them anyway.  [Adarsh-Mr]
+99c7884  Use Google Nexus Audio Files [1/2]  [Adarsh-Mr]
+61f2e11  buildinfo: add Cardinal-AOSP maintainers  [Adarsh-Mr]
+d8afca1  [SQUASH][1/3] build: Changelog  [Adarsh-Mr]
+aca85bc  Fix build for jf may be titan too ;-;  [Adarsh-Mr]
+511bb72  Add SuperSU  [Adarsh-Mr]
+de95627  refractor to Cardinal-AOSP  [Adarsh-Mr]
+599cca7  build: Fix a few mis-merges  [Adarsh-Mr]
+75ea781  build_image: Unbreak verity/FEC generation  [Adarsh-Mr]
+ec92ed3  Allow finer control over how product variables are inherited.  [Adarsh-Mr]
+   * frameworks/base/
+542a605  Add PowerManager integration for button backlight.  [Adarsh-Mr]
+5914a26  LED lights customization [1/3]  [Adarsh-Mr]
+7cfe328  fix build  [Adarsh-Mr]
+bbe8c05  Revert "Forward port SlimSeekBarPreference"  [Adarsh-Mr]
+3ba9370  Revert "Set monitorbox text as string"  [Adarsh-Mr]
+2a76db9  Revert "Clean up a wee bit"  [Adarsh-Mr]
+c6c7295  Revert "SlimSeekBarPreference refactor"  [Adarsh-Mr]
+106ba17  add config to make HwKeys depend on an overlay(1/2)  [Adarsh-Mr]
+5b9b7b0  Hardware key custom rebinding (1/2)  [Adarsh-Mr]
+9dfa696  Fix volume key music control with ambient display enabled  [Adarsh-Mr]
+3b0d965  Fix volume rocker music controls and wake up  [Adarsh-Mr]
+19a611d  Volume rocker music controls [1/2]  [Adarsh-Mr]
+48758f5  Volume Rocker Wake [1/2]  [Adarsh-Mr]
+d7e30d8  Allow prevention of doze notification color inversion  [Adarsh-Mr]
+283e90c  Themes: Expose nav bar tuner colors  [Adarsh-Mr]
+91d80c8  Reintroduce button-backlight (and respective inactivity timeout)  [Adarsh-Mr]
+   * packages/apps/Settings/
+d6c47e5  LED lights customization [2/3]  [Adarsh-Mr]
+496b095  Themes: Expose condition card colors  [Adarsh-Mr]
+0e02ea8  Expose dashboard category and tile color  [Adarsh-Mr]
+a998a63  Settings: Expose storage summary text  [Adarsh-Mr]
+8626a9c  Revert "DayNight: improve storage summary"  [Adarsh-Mr]
+c992504  Configurable 0, 90, 180 and 270 degree rotation (updated) [2/2]  [Adarsh-Mr]
+   * packages/apps/Wings/
+e76767f  Forward port button backlight options  [Adarsh-Mr]
+e89b55e  Added modded marginov color picker  [Adarsh-Mr]
+f82735a  consolidate button settings  [Adarsh-Mr]
+003c23f  add config to make HwKeys depend on an overlay(2/2)  [Adarsh-Mr]
+3be14e1  Hardwarekey rebinding (2/2)  [Adarsh-Mr]
+417544a  Volume Rocker music controls [2/2]  [Adarsh-Mr]
+51c9935  Volume Rocker Wake [2/2]  [Adarsh-Mr]
+35f312a  add empty Buttons tab  [Adarsh-Mr]
+9a7ab31  Settings: Double tap to sleep anywhere on the lock screen (2/2) * Create Ui tab  [Adarsh-Mr]
+5b1e514  Wings: Add CustomSeekBarPreference  [Adarsh-Mr]
+4fdeb94  statusbar brightness control  [Adarsh-Mr]
+c39160e  StatusbarSettings: add double-tap to sleep  [Adarsh-Mr]
+75c3b36  Create Empty  StatusBar TAB  [Adarsh-Mr]
+245a2ea  Update switch and checkbox preferences  [Adarsh-Mr]
+a0996a0  lets start Wings  [Adarsh-Mr]
+
+====================
+     10-09-2016
+====================
+
+   * frameworks/base/
+efb073c  Port: Wake on plug (1/2)  [Adarsh-Mr]
+e521cc6  [QUICK SETTINGS] Add Caffeine QS Tile  [Adarsh-Mr]
+857c2e8  [QUICK SETTINGS] Add IME selector QS Tile  [Adarsh-Mr]
+c669a38  [QUICK SETTINGS] Switch to vector drawables for Play Tile  [Adarsh-Mr]
+2297fb7  [QUICK SETTINGS] Add Music QS Tile  [Adarsh-Mr]
+3fdae6b  [QUICK SETTINGS] Add Sync QS Tile  [Adarsh-Mr]
+0461971  [QUICK SETTINGS] Add Screenshot QS Tile  [Adarsh-Mr]
+eac0c57  [QUICK SETTINGS] Allow for all tiles to be overlay if needed  [Adarsh-Mr]
+985ea59  [QUICK SETTINGS] Add metrics constant for Quick settings tiles  [Adarsh-Mr]
+   * packages/apps/Contacts/
+3c9727d  Themes: Expose hardcoded layout and styles colors  [Adarsh-Mr]
+   * packages/apps/PhoneCommon/
+98955eb  Themes: Make dialpad seperator line theme-able  [Adarsh-Mr]
+   * packages/apps/Settings/
+22be8ad  OMS-N: Apps: show/hide Substratum overlays [2/2]  [Adarsh-Mr]
+   * system/core/
+d251c8e  Use __ with attribute __noreturn__ to avoid colliding with noreturn.  [Adarsh-Mr]
+   * vendor/cardinal/
+7eba240  Update Vendor - Update SuperSU to v2.78-SR1 - Update Substratum to v225 Signed-off-by: Adarsh-MR <adarshmr1998@gmail.com>  [Adarsh-Mr]
+
+====================
+     10-08-2016
+====================
+
+   * frameworks/base/
+a359426  Allow creating custom dialogs in DialogPreference  [Adarsh-Mr]
+06e8078  SlimSeekBarPreference refactor  [Adarsh-Mr]
+c83150b  Clean up a wee bit  [Adarsh-Mr]
+a9f33a8  Set monitorbox text as string  [Adarsh-Mr]
+4becf0c  Forward port SlimSeekBarPreference  [Adarsh-Mr]
+de4a283  SystemUI: Don't disable rotation tile  [Adarsh-Mr]
+267a97f  SystemUI: Double tap to sleep anywhere on the lock screen (1/2)  [Adarsh-Mr]
+5e8e5032  SystemUI : Port forward statusbar brightness control Brings back the status bar brightness control from cm-10.2/cm-11  [Adarsh-Mr]
+0d3627c  SystemUI: Add double tap to sleep gesture [1/2]  [Adarsh-Mr]
+571a721  Allow navbar tuner/nightmode to be launched externally *add externally launchable activity for navbar tuner *add externally launchable activity for night mode  [Adarsh-Mr]
+c11bc5c  Enable SystemUI tuner, kill animated settings icon *Kill animated settings icon *Kill systemui tuner warning *Kill ability to disable tuner  [Adarsh-Mr]
+dba6bad  [1/3]frameworks/base: add "Accept all files" option for incoming files via BT  [Adarsh-Mr]
+0ec0765  Add flashlight notification reminder  [Adarsh-Mr]
+2525ff2  Added a toast to screenshot delete, why not right?  [Adarsh-Mr]
+d8d7262  Update cached buffers in async mode  [Adarsh-Mr]
+6441799  Remove freezing window to fix UI freezing issue  [Adarsh-Mr]
+3578717  Sometimes property service is slow to respond  [Adarsh-Mr]
+ccb5f87  Fix inconsistant display number format issue in Messaging application  [Adarsh-Mr]
+7af1962  Define priority for callerinfo selection  [Adarsh-Mr]
+4e6aff3  Handle ActivityNotFoundException for contacts activity  [Adarsh-Mr]
+110f762  Fix the NullPointerException  [Adarsh-Mr]
+225f6f0  Handle IllegalArgumentException  [Adarsh-Mr]
+f0a238b  Deadlock in PackageInstallerSession  [Adarsh-Mr]
+e04bf41  Fix NPE in updateEmptyShadeView() upon screen rotation  [Adarsh-Mr]
+396bd59  Handle NPE due to threading race  [Adarsh-Mr]
+b53e0ac  Fix ListView is not scrolled properly with arrows  [Adarsh-Mr]
+99a2c75  Handle IllegalStateException from Surface.lockCanvas  [Adarsh-Mr]
+789729f  Fix NPE in TextUtils  [Adarsh-Mr]
+eba3ad5  Fix to avoid UI freeze issue  [Adarsh-Mr]
+4fd8940  Prevent IndexOutOfBoundsException  [Adarsh-Mr]
+923bd63  Handle NPE in TelephonyManager  [Adarsh-Mr]
+a84d5fe  Fix memory leak in MediaScannerConnection  [Adarsh-Mr]
+13f842e  Forward Port: Smoother Upload and Download Animation  [Adarsh-Mr]
+b4bc77d  Bluetooth: Change disconnected icon to be 40% transparent  [Adarsh-Mr]
+aacb98d  Allow chromium to sign in  [Adarsh-Mr]
+c9f0555  SystemUI: disable statusbar time refresh when screen off  [Adarsh-Mr]
+4513b57  Keyguard: don't refresh ui when screen off  [Adarsh-Mr]
+6b090ae  Framework: add Settings.System boolean helper methods  [Adarsh-Mr]
+e53ab48  Enable non-market apps install by default, disable verifier  [Adarsh-Mr]
+8d4abbd  MountService: Prevent NPE with DropBoxManager  [Adarsh-Mr]
+7c2c45e  Add a timer to screen record  [Adarsh-Mr]
+a005541  Save screenrecord in "Screenrecords" directory  [Adarsh-Mr]
+a316c04  Screen Recording: forward port from 4.4  [Adarsh-Mr]
+3ef661a  Add "android.permission.READ_PHONE_STATE" to manifest  [Adarsh-Mr]
+2ae7661  SystemUI needs the SET_WALLPAPER permission  [Adarsh-Mr]
+0db7b06  Rotation related corrections  [Adarsh-Mr]
+56b6765  Align checkbox and description in permission confirmation dialog  [Adarsh-Mr]
+98d21b5  Fix random crash in libhwui  [Adarsh-Mr]
+8ecc73f  core: Add support for more webviews  [Adarsh-Mr]
+3e5720a  framework: fix screenshot and rotation animation for devices with abnormal hw rotation  [Adarsh-Mr]
+0db8ef6  allow forcing HighEndGfx mode  [Adarsh-Mr]
+8c5690f  SettingsProvider : Add functions for delimited strings  [Adarsh-Mr]
+037d027  aapt: Fix compiler warning (clobbered by longjmp)  [Adarsh-Mr]
+465f2ed  OMS-N: ApplicationsState: add filter for Substratum overlays [1/2]  [Adarsh-Mr]
+8305d45  PackageManager: Restrict system packages to protected storage  [Adarsh-Mr]
+ef3ff33  core: Don't enable qualcomm location overlay by default  [Adarsh-Mr]
+c0ae279  Add metrics constant for The Wings  [Adarsh-Mr]
+d0835fb  base: Fix compile error  [Adarsh-Mr]
+03672ee  Configurable 0, 90, 180 and 270 degree rotation [1/2]  [Adarsh-Mr]
+273b2d3  Show icon of package associated with Toast  [Adarsh-Mr]
+f0b012f  Vectone UK (MNC01) considered non-roaming on T-Mobile (MNC30)  [Adarsh-Mr]
+1567e5c  Lycamobile (MNC04) considered non-roaming on Vodafone (MNC01)  [Adarsh-Mr]
+b83ce7c  Vectone/Delight (MNC07) considered non-roaming on NOS (MNC03)  [Adarsh-Mr]
+49623a5  Tele2 considered non-roaming on T-Mo  [Adarsh-Mr]
+ebcbff6  National Roaming: Allow T-Mobile AT (MNC03) to roam on 3 AT (MNC10) in Austria  [Adarsh-Mr]
+bd41755  core: added national roaming info for Spring Mobil in Sweden...  [Adarsh-Mr]
+d351784  core: added national roaming info for Tesco Mobile in Ireland.  [Adarsh-Mr]
+d9209a9  National roaming info for 3 in Ireland  [Adarsh-Mr]
+3465c23  SystemUpdateService: enable service but lock its receivers [1/2]  [Adarsh-Mr]
+769b301  PackageManager: allow build-time disabling of components  [Adarsh-Mr]
+16f585f  Turn off carrier provisioning by default to allow tethering  [Adarsh-Mr]
+af63687  Base: charger sounds also for wired  [Adarsh-Mr]
+60ba4fa  Disable/Enable screenshot sound [1/2]  [Adarsh-Mr]
+3fb44d5  SettingsProvider: Allow default volume adjust sound to be overlayed.  [Adarsh-Mr]
+92eb0d2  SystemUI: add volume tones back [1/2]  [Adarsh-Mr]
+7ff40e5  Added national roaming for Noverca in Italia  [Adarsh-Mr]
+e5d41a9  Added national roaming for BSNL in India  [Adarsh-Mr]
+343b93e  Added national roaming for Orange in Austria  [Adarsh-Mr]
+7737c9c  Added national roaming for Aircel in India  [Adarsh-Mr]
+08da828  Added national roaming for Saunalahti in Finland  [Adarsh-Mr]
+5197d17  Added national roaming for Lycamobile in USA  [Adarsh-Mr]
+8c9477a  Added national roaming for 3AT on T-Mobile in Austria  [Adarsh-Mr]
+f745b67  Added national roaming for Play in Poland  [Adarsh-Mr]
+3545342  SystemUI: Statusbar: Add HSPA+ icons  [Adarsh-Mr]
+670995f  Mark Pixel C keyboard as having hardware autorepeat  [Adarsh-Mr]
+6c8322f  Fix Android 7.0 GApps permisions which were causing F/C  [Adarsh-Mr]
+fb1678f  Add Google's new alarm sounds from Android N  [Adarsh-Mr]
+d4700b8  Update camera and video UI sounds from new Nexus devices  [Adarsh-Mr]
+ac14a47  Use Google Nexus Audio Files [2/2]  [Adarsh-Mr]
+
+====================
+     10-07-2016
+====================
+
+
+====================
+     10-06-2016
+====================
+
+   * art/
+4cb3fdd  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//art into HEAD  [Adarsh-MR]
+   * frameworks/av/
+df3a7c4  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//frameworks/av into HEAD  [Adarsh-MR]
+   * frameworks/base/
+3d0e3dd  Merge pull request #21 from STRYDER-007/nougat3  [GitHub]
+   * frameworks/native/
+f83cc1f  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//frameworks/native into HEAD  [Adarsh-MR]
+   * frameworks/opt/net/wifi/
+d66a125  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//frameworks/opt/net/wifi into HEAD  [Adarsh-MR]
+   * frameworks/opt/telephony/
+56f93fb  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//frameworks/opt/telephony into HEAD  [Adarsh-MR]
+   * manifest/
+d20aa46  Merge android-7.0.0_r14  [Adarsh-MR]
+   * packages/apps/Settings/
+7accbec  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD  [Adarsh-MR]
+   * packages/providers/TelephonyProvider/
+2f9d70a  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//packages/providers/TelephonyProvider into HEAD  [Adarsh-MR]
+   * system/bt/
+19447ff  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//system/bt into HEAD  [Adarsh-MR]
+   * system/core/
+b055e63  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//system/core into HEAD  [Adarsh-MR]
+   * system/media/
+db64a53  Merge tag 'android-7.0.0_r14' of https://android.googlesource.com/platform//system/media into HEAD  [Adarsh-MR]
